@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Electromagnetismo</title>
+    <link rel="stylesheet" href="csstest.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Test de física II</h1>
+    
+    <div class="form-container">
+        <form id="diagnosticForm">
+            <!-- Pregunta 1 -->
+            <div class="question">
+                <h3>1. Dos cargas de +5 μC y -3 μC están separadas 2 metros. ¿Cuál es la fuerza entre ellas según la ley de Coulomb? (k = 9×10⁹ N·m²/C²)</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q1" id="q1a" value="a">
+                        <label for="q1a">3.375×10⁻² N de atracción</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" id="q1b" value="b">
+                        <label for="q1b">6.75×10⁻² N de repulsión</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" id="q1c" value="c">
+                        <label for="q1c">6.75×10⁻² N de atracción</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pregunta 2 -->
+            <div class="question">
+                <h3>2. ¿Qué establece la ley de Gauss?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q2" id="q2a" value="a">
+                        <label for="q2a">El flujo eléctrico a través de una superficie cerrada es proporcional a la carga encerrada</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q2" id="q2b" value="b">
+                        <label for="q2b">La fuerza entre cargas es inversamente proporcional al cuadrado de la distancia</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q2" id="q2c" value="c">
+                        <label for="q2c">El campo eléctrico en un conductor es siempre cero</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pregunta 3 -->
+            <div class="question">
+                <h3>3. Un capacitor de 10 μF se conecta a una batería de 12 V. ¿Cuál es la energía almacenada?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q3" id="q3a" value="a">
+                        <label for="q3a">720 μJ</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q3" id="q3b" value="b">
+                        <label for="q3b">120 μJ</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q3" id="q3c" value="c">
+                        <label for="q3c">1.44 mJ</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pregunta 4 -->
+            <div class="question">
+                <h3>4. Por un conductor circula una corriente de 2 A durante 5 minutos. ¿Qué carga ha pasado?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q4" id="q4a" value="a">
+                        <label for="q4a">10 C</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q4" id="q4b" value="b">
+                        <label for="q4b">600 C</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q4" id="q4c" value="c">
+                        <label for="q4c">2.5 C</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pregunta 5 -->
+            <div class="question">
+                <h3>5. ¿Qué establece la ley de Faraday?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q5" id="q5a" value="a">
+                        <label for="q5a">La fem inducida es proporcional al cambio del flujo magnético</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q5" id="q5b" value="b">
+                        <label for="q5b">La corriente genera un campo magnético proporcional</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q5" id="q5c" value="c">
+                        <label for="q5c">Las cargas en movimiento experimentan fuerza en campos magnéticos</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pregunta 6 -->
+            <div class="question">
+                <h3>6. Calcula el campo eléctrico a 3 m de una carga puntual de +6 nC.</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q6" id="q6a" value="a">
+                        <label for="q6a">6 N/C</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q6" id="q6b" value="b">
+                        <label for="q6b">60 N/C</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q6" id="q6c" value="c">
+                        <label for="q6c">600 N/C</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pregunta 7 -->
+            <div class="question">
+                <h3>7. Tres resistencias de 2 Ω, 3 Ω y 6 Ω están en paralelo. ¿Cuál es la resistencia equivalente?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q7" id="q7a" value="a">
+                        <label for="q7a">1 Ω</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q7" id="q7b" value="b">
+                        <label for="q7b">11 Ω</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q7" id="q7c" value="c">
+                        <label for="q7c">0.92 Ω</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pregunta 8 -->
+            <div class="question">
+                <h3>8. ¿Qué describe la ley de Ampère?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q8" id="q8a" value="a">
+                        <label for="q8a">La circulación del campo magnético alrededor de una corriente</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q8" id="q8b" value="b">
+                        <label for="q8b">La fuerza entre corrientes paralelas</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q8" id="q8c" value="c">
+                        <label for="q8c">La inducción de corriente en conductores</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pregunta 9 -->
+            <div class="question">
+                <h3>9. Un alambre de 1 m se mueve a 5 m/s perpendicular a un campo magnético de 2 T. ¿Qué fem se induce?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q9" id="q9a" value="a">
+                        <label for="q9a">2.5 V</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q9" id="q9b" value="b">
+                        <label for="q9b">10 V</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q9" id="q9c" value="c">
+                        <label for="q9c">0.4 V</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pregunta 10 -->
+            <div class="question">
+                <h3>10. ¿Cuál es la diferencia entre campo eléctrico y potencial eléctrico?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q10" id="q10a" value="a">
+                        <label for="q10a">El campo es fuerza por carga, el potencial es energía por carga</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q10" id="q10b" value="b">
+                        <label for="q10b">El campo es vectorial, el potencial es escalar</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q10" id="q10c" value="c">
+                        <label for="q10c">Ambas respuestas anteriores son correctas</label>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="button" id="submitBtn">Evaluar respuestas</button>
+        </form>
+    </div>
+    
+    <div class="results" id="results">
+        <h2>Resultados del Test</h2>
+        <div class="score" id="score"></div>
+        
+        <div class="chart-container">
+            <canvas id="resultsChart"></canvas>
+        </div>
+        
+        <div class="feedback" id="feedback"></div>
+        
+        <button type="button" id="generatePdfBtn">Generar PDF</button>
+    </div>
+
+    <script src="jstest.js"></script>
+</body>
+</html>
